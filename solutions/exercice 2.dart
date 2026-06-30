@@ -5,11 +5,11 @@ void main() {
   double score = 95.5;
   score = 'A';         // compile error: double can't hold String
 
-  int items = 3;
+   items = 3;
   items = 3.0;         // compile error: int can't hold double
 
-  bool isDone = false;
-  isDone = 'yes';      // compile error: bool can't hold String
+  dynamic isDone = false;
+  isDone = 'yes';      // no compile error: dynamic can hold any type
 
   print('$name scored $score with $items items (done: $isDone)');
 }
